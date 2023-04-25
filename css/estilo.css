@@ -1,0 +1,106 @@
+@font-face {
+    font-family:Nunito-Black ;
+    src: url(../fonts/Nunito-Black.ttf);
+}
+
+@font-face {
+    font-family:Nunito-Bold ;
+    src: url(../fonts/Nunito-Bold.ttf);
+}
+
+@font-face {
+    font-family:Nunito-extralight ;
+    src: url(../fonts/Nunito-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family:OpenSans-Bold ;
+    src: url(../fonts/OpenSans-Bold.ttf);
+}
+
+@font-face {
+    font-family:OpenSans-Regular ;
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+
+
+
+.organizacion {
+
+    height: 500px;
+}
+
+
+
+.nav-link {
+    color: #929196;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+.boton {
+    font-family:Nunito-Bold ;
+     margin-top: 30px; 
+     max-width: 205px; 
+     background-color: #8C0303;
+      border-color: #8C0303;
+      width: 100px;
+      height: 50px;
+      border-radius: 30px;
+}
+
+.boton:hover {
+    background-color:#343A40;
+    border-color: #343A40;
+}
+
+.banner1 {
+    background-image: url("../images/banner1.jpeg");
+    background-size: 1600px;
+    background-repeat: no-repeat;
+    background-position: left ;
+    background-position: -80px center;
+}
+
+.banner1texto {
+    color: white;
+    text-shadow: 1px 1px 1px #333;
+    font-size: 15px;
+}
+
+.logo {
+    position: absolute;
+     top: 15px; 
+     left: 220px;
+    max-width: 155px;
+}
+
+
+@media (max-width: 767px) {
+
+    .organizacion {
+    
+        height: 600px
+    }
+    
+.logo {
+    left: 20px;
+}
+
+.boton {
+    margin-left: 300px;
+    
+}
+    
+.banner1 {
+    background-position: -800px center;
+}
+    }
+
+.navbar-toggler {
+    margin-left: 310px;
+    margin-top: 5px;
+}
