@@ -156,8 +156,6 @@
 </div>
 
 
-
-
 <div class="container-fluid bg-danger p-2 d-flex align-items-center justify-content-center">
   <div class="row">
     <div class="col-md-7 col-sm-12 text-center">
@@ -170,7 +168,63 @@
 </div>
 
 
+<!-- aca va el formulario del proceso -->
 
+<div class="container">
+  <h2 class="mb-4">Proceso de Cotización</h2>
+  <div class="progress mb-4">
+    <div class="progress-bar" role="progressbar" style="width: 33%" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100">Paso 1 de 3</div>
+  </div>
+  <form id="cotizacion-form" class="needs-validation" novalidate>
+    <!-- Paso 1 -->
+    <div id="paso1" class="form-step">
+      <h3 class="mb-4">Paso 1: Información personal</h3>
+      <div class="form-group">
+        <label for="nombre"><i class="fa fa-user"></i> Nombre completo:</label>
+        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese su nombre completo" required>
+        <div class="invalid-feedback">
+          Por favor, ingrese su nombre completo.
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email"><i class="fa fa-envelope"></i> Correo electrónico:</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="Ingrese su correo electrónico" required>
+        <div class="invalid-feedback">
+          Por favor, ingrese un correo electrónico válido.
+        </div>
+      </div>
+      <button type="button" class="btn btn-primary next-btn">Siguiente <i class="fa fa-arrow-right"></i></button>
+    </div>
+    
+    <!-- Paso 2 -->
+    <div id="paso2" class="form-step d-none">
+      <h3 class="mb-4">Paso 2: Información de producto</h3>
+      <div class="form-group">
+        <label for="producto"><i class="fa fa-tag"></i> Producto:</label>
+        <input type="text" class="form-control" id="producto" name="producto" placeholder="Ingrese el nombre del producto" required>
+        <div class="invalid-feedback">
+          Por favor, ingrese el nombre del producto.
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="cantidad"><i class="fa fa-sort-numeric-asc"></i> Cantidad:</label>
+        <input type="number" class="form-control" id="cantidad" name="cantidad" placeholder="Ingrese la cantidad deseada" required>
+        <div class="invalid-feedback">
+          Por favor, ingrese una cantidad válida.
+        </div>
+      </div>
+      <button type="button" class="btn btn-secondary prev-btn"><i class="fa fa-arrow-left"></i> Anterior</button>
+      <button type="button" class="btn btn-primary next-btn">Siguiente <i class="fa fa-arrow-right"></i></button>
+    </div>
+    
+    <!-- Paso 3 -->
+    <div id="paso3" class="form-step d-none">
+      <h3 class="mb-4">Paso 3: Información adicional</h3>
+      <div class="form-group">
+        <label for="mensaje"><i class="fa fa-comment"></i> Mensaje:</label>
+        <textarea class="form-control id="mensaje" name="mensaje" rows="5" placeholder="Ingrese un mensaje adicional"></textarea>
+
+ 
 
 
 
