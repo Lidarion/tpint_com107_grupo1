@@ -52,11 +52,24 @@
       border-radius: 30px;
 }
 
-.boton:hover {
-    background-color:#343A40;
-    border-color: #343A40;
-}
+.boton:hover, .send:hover {
+    background-color: #343A40 !important;
+    border-color: #343A40 !important;
+    outline: none !important;
+  }
+  
+ 
 
+  .boton:focus,
+  .boton:active {
+    background-color: #8C0303 ;
+    border-color: #8C0303;
+    outline: none !important;
+    box-shadow: none;
+  }
+  
+
+  
 .banner1 {
     background-image: url("../images/banner1.jpeg");
     background-size: 1600px;
@@ -78,12 +91,93 @@
     max-width: 155px;
 }
 
+.ayuda {
+    height: 100px;
+}
 
+
+
+
+    .cuestionario {
+        height: 600px; 
+         }
+
+.navbar-toggler {
+    margin-left: 310px;
+    margin-top: 5px;
+}
+
+.mb-0 {
+    color: white;
+}
+
+.mb-0:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.medio {
+    font-family:OpenSans-Regular ;
+    font-size: 23px;
+    color: white;
+    padding-top: 15px;
+}
+
+.comenzar {
+
+    border-radius: 30px;
+    width: 170%;
+    height: 150%;
+    vertical-align: top;
+    line-height: 1;
+    background-color:#8C0303;
+    border-color: white;
+    margin-top: 20px;
+}
+
+.comenzar:hover{
+    background-color:#343A40;
+    border-color: white;
+
+}
+
+.comenzar:focus,
+.comenzar:active {
+  background-color: #8C0303 ;
+  border-color: #8C0303;
+  outline: none !important;
+  box-shadow: none;
+}
+
+.boton2 {
+    background-color: #343A40;
+    border-color:#343A40 ;
+    margin-left: 480px;
+}
+
+.boton2:hover {
+    background-color: #8C0303;
+    border-color: #8C0303;
+}
+
+.centrar {
+    text-align: center;
+}
+
+.banner2 {
+    background-image: url(../images/banner2.jpeg);
+    background-size: 1710px;
+    background-repeat: no-repeat;
+    background-position: left ;
+    background-position: -90px center;
+}
 @media (max-width: 767px) {
 
     .organizacion {
     
-        height: 600px
+        height: 600px 
+
+    
     }
     
 .logo {
@@ -98,19 +192,28 @@
 .banner1 {
     background-position: -800px center;
 }
+
+.ayuda {
+    height: 200px;
+}
+
+.comenzar {
+    margin-left: 80px;
+}
+
+.cuestionario {
+    height: 800px; 
+     }
+
+.boton2 {
+    margin-left: 150px;
+}
+
+.iconos {
+    margin-left: 200px;
+}
+
+.banner2 {
+    background-position: -600px center;
+}
     }
-
-.navbar-toggler {
-    margin-left: 310px;
-    margin-top: 5px;
-}
-
-.mb-0 {
-    color: white;
-}
-
-.mb-0:hover {
-    color:#343A40 ;
-    text-decoration: none;
-}
-

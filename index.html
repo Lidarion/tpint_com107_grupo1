@@ -4,202 +4,413 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-
-    <!-- libreria de boostrap del campus -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-
-    <!-- Iconos -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" type="text/css" />
-
-    <!-- Fonts -->
-    <link href="./css/estilo.css" type="text/css" rel="stylesheet">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.11.1/css/all.css">
-
-    <script src="script.js"></script>
-
     <title>Gym</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+
+<link href="./css/estilo.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.11.1/css/all.css">
+  
+
 </head>
 <body>
+
+
+
     <header>
-      <div class="position-relative">
-        <div class="blanco" style="height: 100px; background-color: #F2F2F2;">
-          <div class="container" style="height: 100px;">
-            <div class="row h-100">
-              <div class="container-fluid" style="height: 100px;">
-                <div class="offset-md-10">
-                  <button type="button"  class=" boton btn btn-primary ">LOGIN</button>
+        <div class="position-relative">
+          <div class="blanco" style="height: 100px; background-color: #F2F2F2;">
+            <div class="container" style="height: 100px;">
+              <div class="row h-100">
+                <div class="container-fluid" style="height: 100px;">
+                  <div class="offset-md-10">
+                    <button type="button" class="boton btn btn-primary" data-toggle="modal" data-target="#ejemploModal">LOGIN</button>
+                </div>
               </div>
             </div>
-          </div>
+              </div>
             </div>
-          </div>
-          <div class="gris" style="height: 65px; background-color: #343a40; position: relative;">
-          <div class="container" style="height: 65px;">
-              <div class="row ">
-                <div class="container-fluid " style="height: 65px;">
-                    <div class="row col-md-12" style="margin-right: 0px;">
-    
-                      <nav class="navbar navbar-expand-lg navbar-dark bg-dark offset-md-8" >
-                        
-        
-                            <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                              </button>
-        
-                            <div class="collapse navbar-collapse" id="navbarNav">
-                              <ul class="navbar-nav ml-auto">
-        
-                              <li class="nav-item " >
-                              <a class="nav-link"   href="#quienesomos">Organización</a>
-                              </li>
-    
-                              <li class="nav-item">
-                              <a class="nav-link"   href="#comofunciona">Personal</a>
-                              </li>
-    
-                                <li class=" nav-item">
-                                <a class="nav-link"  href="#FAQS">Contacto</a>
-                                </li>
-                                
-                                <li class=" nav-item">
-                                <a class="nav-link"  href="#FAQS">Inscribite</a>
-                                </li>
-                            </ul>
-                          
-                          </div>
-    
-                      </nav>
-                    </div>
-                </div>
-            </div>
-          </div>
-          </div>
-          <div>
-          <img src="./images/logo.png" alt="Logo"  class="logo">
-        </div>
-    </div>
-
-      </header>
+            <div class="gris" style="height: 65px; background-color: #343a40; position: relative;">
+            <div class="container" style="height: 65px;">
+                <div class="row ">
+                  <div class="container-fluid " style="height: 65px;">
+                      <div class="row col-md-12" style="margin-right: 0px;">
       
-      <main>
+                        <nav class="navbar navbar-expand-lg navbar-dark bg-dark offset-md-8" >
+                          
+          
+                              <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                                </button>
+          
+                              <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav ml-auto">
+          
+                                <li class="nav-item " >
+                                <a class="nav-link"   href="#quienesomos">Organización</a>
+                                </li>
+      
+                                <li class="nav-item">
+                                <a class="nav-link"   href="#comofunciona">Personal</a>
+                                </li>
+      
+                                  <li class=" nav-item">
+                                  <a class="nav-link"  href="#contacto">Contacto</a>
+                                  </li>
+                                  
+                                  <li class=" nav-item">
+                                  <a class="nav-link"  href="#inscribite">Inscribite</a>
+                                  </li>
+                              </ul>
+                            
+                            </div>
+      
+                        </nav>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            </div>
+            <div>
+            <img src="./images/logo.png" alt="Logo"  class="logo">
+          </div>
+      </div>
   
-        <div class="banner1">
-     <div class="container" style="height: 500px">
-        <div class="row  h-100">
-             <div class="container-fluid ">
-                <div class=" banner1texto  text-center offset-sm-8" style="padding-top: 200px; font-size: 30px;">
-                    <p>Superá tus límites.</p>
-                </div>
-                  <div class=" banner1texto text-center offset-sm-8 " style="color: #929196; ">
-                    <p>Comienza a transformarte hoy mismo con nuestro gimnasio.</p>
-                </div>
-                 
-                <br>
-                
-             </div>
-        </div>
-   </div>
+  
+  
+      <div class="modal fade" id="ejemploModal" tabindex="-1" aria-labelledby="exampleModalLabel" ariahidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content" style="background-color: #F2F2F2;">
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span
+                      aria-hidden="true">&times;</span> </button>
+                  </div>
+                  <div class="modal-body"> 
+                      <form>
+                          <h4>Iniciar Sesion</h4>
+                          <br>
+                          <div class="form-group">
+                              <label><i class="bi bi-person-fill"></i>&nbsp;Usuario</label>
+                              <input type="text" name="Usuario" value="" class="form-control" >
+                          </div>
+                          
+                          <div class="form-group" >
+                            <label for="exampleInputPassword1" class="form-label"><i class="bi bi-lock"></i>&nbsp;Contraseña</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                          </div>
+                      </form>
+                      
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="bi bi-x-square"></i>&nbsp;Cerrar</button>
+                      <button type="button" class="btn btn-primary send" style="background-color: #8C0303; box-shadow: none; outline: none;"><i class="bi bi-send"></i>&nbsp;Enviar</button>
+                  </div>
+              </div>  
+          </div>
+  </div>
+  
+</header>
+<main>
+  
+    <div class="banner1">
+ <div class="container" style="height: 500px">
+    <div class="row  h-100">
+         <div class="container-fluid ">
+            <div class=" banner1texto  text-center offset-sm-8" style="padding-top: 200px; font-size: 30px;">
+                <p>Superá tus límites.</p>
+            </div>
+              <div class=" banner1texto text-center offset-sm-8 " style="color: #929196; ">
+                <p>Comienza a transformarte hoy mismo con nuestro gimnasio.</p>
+            </div>
+             
+            <br>
+            
+         </div>
+    </div>
 </div>
+</div>
+<section id="quienesomos">
 
 <div class="organizacion" style=" background-color: #D9D9D9;">
-  <div class="container organizacion" >
-      <div class="row  h-100">
-           <div class="container-fluid organizacion " >
-              <div class=" col-md-2 mx-auto text-center" >
-                  <p style="margin-bottom: 0px;margin-top: 50px;color: #F20505;" >ORGANIZACIÓN</p>
-              </div>
-                <div class="col-md-3 mx-auto text-center" style="color: #8E0000;" >
-                  <h3><strong>¿Quienes somos?</strong></h3>
-              </div>
-              <br>
-              
-              <div class=" col-md-8 mx-auto text-center ">
-                <p>¡Bienvenidos a nuestro gimnasio! Aquí encontrarás todo lo necesario para llevar tu cuerpo al siguiente nivel y alcanzar tus metas de fitness. Nuestra misión es ayudarte a lograr una vida más activa y saludable a través del ejercicio y la dedicación.<br><br>
-
-                  Contamos con un equipo de entrenadores expertos y apasionados, instalaciones de primer nivel y un ambiente motivador para que puedas entrenar con comodidad y confianza. En nuestro gimnasio, nuestra visión es ser el lugar de referencia para aquellos que buscan superar sus propios límites y alcanzar la mejor versión de sí mismos.<br><br>
-                  
-                  Ya sea que estés buscando perder peso, ganar músculo o simplemente mejorar tu salud en general, estamos aquí para ayudarte en cada paso del camino. ¡Únete a nuestra comunidad hoy mismo y comienza a transformarte!</p>
-            </div>
-           </div>
-      </div>
-  </div>
-</div>
-<!-- aca banner con imágenes y botón -->
-
-<div class="container-fluid bg-dark">
-  <div class="row">
-    <div class="col-md-3 pt-5 pb-5 pl-5 pr-0">
-      <p class="text-danger mb-0" style="font-size: 1.2rem;">PERSONAL</p>
-      <h3 class="text-white mb-3">Nuestros Profesionales</h3>
-    </div>
-    <div class="col-md-9 pt-5 pb-5 pl-0 pr-5 text-center">
-      <div class="row">
-        <div class="col-md-4">
-          <img src="" alt="Círculo 1" class="img-fluid rounded-circle mb-3" id="director1-img">
-          <h5 class="text-white" id="director1-name"></h5>
-          <p class="text-white" id="director1-email"></p>
-        </div>
-        <div class="col-md-4">
-          <img src="" alt="Círculo 2" class="img-fluid rounded-circle mb-3" id="director2-img">
-          <h5 class="text-white" id="director2-name"></h5>
-          <p class="text-white" id="director2-email"></p>
-        </div>
-        <div class="col-md-4">
-          <img src="" alt="Círculo 3" class="img-fluid rounded-circle mb-3" id="director3-img">
-          <h5 class="text-white" id="director3-name"></h5>
-          <p class="text-white" id="director3-email"></p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-
-<div class="container-fluid bg-danger p-2 d-flex align-items-center justify-content-center">
-  <div class="row">
-    <div class="col-md-7 col-sm-12 text-center">
-      <p class="text-white font-size-xxl mb-4">Alcanza tu potencial</p>
-    </div>
-    <div class="col-md-5 col-sm-12 text-center">
-      <a href="#" class="btn btn-outline-light btn-lg">Inscribite</a>
-    </div>
-  </div>
-</div>
-
-
-
-
-
-
-      </main>
-
-        <!-- aca el contenido del pie de página -->
-        <footer class="bg-dark pb-sm-4 pb-2">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6 text-center text-md-left">
-                <a href="#" class="mb-0">Términos y Condiciones │ Contáctanos</a>
-              </div>
-              <div class="col-md-6 text-md-right">
-                <a href="#" class="text-white mr-3"><i class="fab fa-facebook fa-lg"></i></a>
-                <a href="#" class="text-white mr-3"><i class="fab fa-instagram fa-lg"></i></a>
-              </div>
-            </div>
-            <hr class="my-3 border-light">
-            <p class="text-center mb-0 mt-3">
-              <a href="#" class="mb-0">©2023 Todos los derechos reservados - Gym</a>
-            </p>
+<div class="container organizacion" >
+  <div class="row  h-100">
+       <div class="container-fluid organizacion " >
+          <div class=" col-md-2 mx-auto text-center" >
+              <p style="margin-bottom: 0px;margin-top: 50px;color: #F20505;" >ORGANIZACIÓN</p>
           </div>
-        </footer>
+            <div class="col-md-3 mx-auto text-center" style="color: #8E0000;" >
+              <h3><strong>¿Quienes somos?</strong></h3>
+          </div>
+          <br>
+          
+          <div class=" col-md-8 mx-auto text-center ">
+            <p>¡Bienvenidos a nuestro gimnasio! Aquí encontrarás todo lo necesario para llevar tu cuerpo al siguiente nivel y alcanzar tus metas de fitness. Nuestra misión es ayudarte a lograr una vida más activa y saludable a través del ejercicio y la dedicación.<br><br>
+
+              Contamos con un equipo de entrenadores expertos y apasionados, instalaciones de primer nivel y un ambiente motivador para que puedas entrenar con comodidad y confianza. En nuestro gimnasio, nuestra visión es ser el lugar de referencia para aquellos que buscan superar sus propios límites y alcanzar la mejor versión de sí mismos.<br><br>
+              
+              Ya sea que estés buscando perder peso, ganar músculo o simplemente mejorar tu salud en general, estamos aquí para ayudarte en cada paso del camino. ¡Únete a nuestra comunidad hoy mismo y comienza a transformarte!</p>
+        </div>
+       </div>
+  </div>
+</div>
+</div>
+</section>
+
+<section id="comofunciona">
+<div class="container-fluid bg-dark">
+<div class="row" style="height: 100px;">
+<div class="col-md-3 pt-5 pb-5 pl-5 pr-0">
+  <p class="text-danger mb-0" style="font-size: 1.2rem;">PERSONAL</p>
+  <h3 class="text-white mb-3">Nuestros Profesionales</h3>
+</div>
+</div>
+<div class="col-md-9 pt-5 pb-5 pl-0 pr-5 text-center offset-md-2">
+  <div class="row">
+    <div class="col-md-4">
+      <img src="" alt="Círculo 1" class="img-fluid rounded-circle mb-3" id="director1-img">
+      <h5 class="text-white" id="director1-name"></h5>
+      <p class="text-white" id="director1-email"></p>
+    </div>
+    <div class="col-md-4">
+      <img src="" alt="Círculo 2" class="img-fluid rounded-circle mb-3" id="director2-img">
+      <h5 class="text-white" id="director2-name"></h5>
+      <p class="text-white" id="director2-email"></p>
+    </div>
+    <div class="col-md-4">
+      <img src="" alt="Círculo 3" class="img-fluid rounded-circle mb-3" id="director3-img">
+      <h5 class="text-white" id="director3-name"></h5>
+      <p class="text-white" id="director3-email"></p>
+    </div>
+  </div>
+</div>
+
+</div>
+</section>
+
+
+<div class="ayuda" style=" background-color: #8C0303;">
+<div class="container h-100 d-flex ">
+<div class="row w-100 justify-content-center">
+  <div class="col-sm-5 col-xs-4 d-flex align-items-center justify-content-center">
+    <div class="medio mx-auto text-center">
+      <h3>Alcanzá tu potencial</h3>
+    </div>
+  </div>
+  <div class="col-sm-3 col-xs-4 d-flex " >
+    <div class=" " style="height: 40%;">
+      <button type="button"  class="comenzar btn btn-primary" style= "font-family:Nunito-Bold; border-color: white;">Sumate</button>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<section id="contacto">
+<div class="cuestionario" style=" background-color: #D9D9D9;" >
+<div class="container cuestionario" >
+<div class="row h-100">
+  <div class="container-fluid cuestionario" >
+    <br>
+    <br>
+    <div class="col-md-3 mx-auto text-center" style="color: #8C0303;">
+      <h3><strong>Contactanos</strong></h3>
+    </div>
+    <br>
+    <br>
+    <div class="row">
+        <p style="color:#8C0303" id="idconsulta" class="align-items-center offset-md-5"> Tu consulta fue enviada</p>
+    </div>
+        <div class="row">
+        <button id="id_mostrar" class="btn btn-success boton2" ><strong>Volver al formulario </strong></button>
+    </div>
+    <div class="container" id="formu">
+      <form id="idCaja3">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group formulario">
+              <label for="exampleInputname" class="form-label"><i class="bi bi-person"></i>&nbsp;Nombre</label>
+              <input type="name" class="form-control" id="exampleInputname" aria-describedby="namehelp">
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group formulario">
+              <label><i class="bi bi-person-circle"></i>&nbsp;Apellido</label>
+              <input type="text" name="" value="" class="form-control" >
+          </div>
+            </div>
+          </div>
+        
+        <div class="row" >
+          <div class="col-sm-4 col-xs-4">
+            <div class="form-group formulario" >
+              <label for="exampleInputEmail1" class="form-label"><i class="bi bi-envelope-at"></i>&nbsp;Email </label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+          </div>
+          <div class="col-sm-4 col-xs-4">
+            <div class="form-group formulario">
+              <label for="numero"><i class="bi bi-telephone"></i>&nbsp;Número:</label>
+              <input type="number" class="form-control" id="numero" name="numero">
+            </div>
+          </div>
+          <div class="col-sm-4 col-xs-4 d-flex align-items-center justify-content-center">
+            <div class="form-group formulario">
+              <label for="provincia"><i class="bi bi-house"></i>&nbsp;Provincia:</label>
+              <select id="provincia" name="provincia">
+                <option disabled selected hidden>Seleccionar provincia</option>
+                <option value="Buenos Aires">Buenos Aires</option>
+                <option value="Córdoba">Córdoba</option>
+                <option value="Santa Fe">Santa Fe</option>
+                <option value="Mendoza">Mendoza</option>
+                <option value="Entre Ríos">Entre Ríos</option>
+                <option value="Tucumán">Tucumán</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="row" id="fila2">
+          <div class="col-sm-4 col-xs-4 offset-md-4 ">
+            <div class="form-group formulario">
+          <label for="comentario" class="form-label"><i class="bi bi-chat-left"></i>&nbsp;Comentario</label>
+            <textarea class="form-control" id="comentario" rows="3"></textarea>
+              </div>
+        </div>
+          </div>
+          <br>
+          <br>
+          <div class="row">
+            <div class="form-group formulario">
+                <button id="id_ocultar" class="btn btn-success boton2" ><strong>Enviar consulta</strong></button>
+          </div>
+        </div>
+          </form>
+        </div>
+      
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</section>
+
+<div class="banner2">
+<div class="container" style="height: 500px">
+ <div class="row  h-100">
+      <div class="container-fluid ">
+         <div class=" banner1texto  text-center offset-sm-8" style="padding-top: 200px; font-size: 25px;">
+             <p >&nbsp;&nbsp;&nbsp;Transforma tu cuerpo.</p>
+         </div>
+           
+          
+         <br>
+         
+      </div>
+ </div>
+</div>
+</div>
+
+<section id="inscribite"></section>
+<div class="cuestionario" style=" background-color: #D9D9D9; height: 500px;" >
+<div class="container " >
+  <div class="row col-md-12">
+  <h2 class="col-md-6 offset-md-4" style="color: #8C0303;">Proceso de Inscripcion</h2>
+</div>
+  <div class="progress mb-4">
+    <div class="progress-bar" role="progressbar" style="width: 33%" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100">Paso 1 de 3</div>
+  </div>
+  <form id="cotizacion-form" class="needs-validation" novalidate>
+    <!-- Paso 1 -->
+    <div id="paso1" class="form-step">
+      <h3 class="mb-4" style="color: #8C0303;">Paso 1: Información personal</h3>
+      <div class="form-group">
+        <label for="nombre"><i class="fa fa-user"></i> Nombre completo:</label>
+        <input type="text" class="form-control" id="nombre1" name="nombre1" placeholder="Ingrese su nombre completo" required>
+        <div class="invalid-feedback" id="invalid-feedback">
+          Por favor, ingrese su nombre completo.
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email"><i class="fa fa-envelope"></i> Correo electrónico:</label>
+        <input type="email" class="form-control" id="email1" name="email1" placeholder="Ingrese su correo electrónico" required>
+        <div class="invalid-feedback" id="invalid-feedback1">
+          Por favor, ingrese un correo electrónico válido.
+        </div>
+      </div>
+      <button type="button" class="boton btn btn-primary next-btn" id="botonpaso1">Siguiente <i class="fa fa-arrow-right"></i></button>
+    </div>
     
-      <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+    <!-- Paso 2 -->
+    <div id="paso2" class="form-step">
+      <h3 class="mb-4"style="color: #8C0303;">Paso 2: '¿Que clases deseas tomar?</h3>
+      <div class="form-group">
+        <label for="producto"><i class="bi bi-music-note-beamed"></i> Clase:</label>
+        <input type="text" class="form-control" id="producto1" name="producto1" placeholder="ingrese el nombre de una clase." required>
+        <div class="invalid-feedback">
+          Por favor, ingrese el nombre de una clase.
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="cantidad"><i class="bi bi-calendar-check"></i> Para que fecha:</label>
+        <input type="number" class="form-control" id="cantidad1" name="cantidad1" placeholder="ingrese una fecha." required>
+        <div class="invalid-feedback">
+          Por favor, ingrese una fecha válida.
+        </div>
+      </div>
+      <button type="button" class="btn btn-secondary prev-btn boton" id="volver"><i class="fa fa-arrow-left"></i> Anterior</button>
+      <button type="button" class="btn btn-primary next-btn boton" id="botonpaso2">Siguiente <i class="fa fa-arrow-right"></i></button>
+    </div>
+    
 
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
 
-<script src="/js/script.js"></script>
+    <!-- Paso 3 -->
+    <div id="paso3" class="form-step ">
+      <h3 class="mb-4"style="color: #8C0303;">Paso 3: Información adicional</h3>
+      <div class="form-group">
+        <label for="mensaje"><i class="fa fa-comment"></i> Mensaje:</label>
+        <textarea class="form-control id="mensaje1" name="mensaje1" rows="5" placeholder="Ingrese un mensaje adicional"></textarea>
+        <button type="button" class=" boton btn btn-primary next-btn" id="enviar">Enviar <i class="fa fa-arrow-right"></i></button>
+      </div>
+   </div>
+  </section>
+  </main>
+
+  <footer class="bg-dark pb-sm-4 pb-2" >
+    <div class="container" >
+      <div class="row" >
+        <div class="col-md-6 centrar text-md-left">
+          <br>
+          <a href="#" class="mb-0">Términos y Condiciones │ Contáctanos</a>
+        </div>
+        <div class="col-md-6 text-md-right iconos ">
+          <br>
+          <a href="#" class="text-white mr-3"><i class="fab fa-facebook fa-lg"></i></a>
+          <a href="#" class="text-white mr-3"><i class="fab fa-instagram fa-lg"></i></a>
+        </div>
+      </div>
+      <hr class="my-3 border-light">
+      <p class="text-center mb-0 mt-3">
+        <a href="#" class="mb-0">©2023 Todos los derechos reservados - Gym</a>
+      </p>
+    </div>
+  </footer>
+
+
+    <script src="./js/jquery-3.6.4.min.js" type="text/javascript"></script>
+    <!--
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+-->
+    <script type="text/javascript" src="./js/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-
+  DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-
+  9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-
+  +sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
 </body>
 </html>
